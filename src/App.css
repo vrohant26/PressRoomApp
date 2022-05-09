@@ -129,6 +129,11 @@
   opacity: 0.5;
 }
 
+.active {
+  background-color: white !important;
+  color: #1e376d !important;
+}
+
 .decoration-none {
   text-decoration: none !important;
   color: white;

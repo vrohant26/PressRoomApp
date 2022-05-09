@@ -6,7 +6,7 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React from "react";
 import Logo from "../assets/white-logo.png";
 
@@ -28,43 +28,36 @@ export default function SideBar({ sidebar, close }) {
 
         <List
           sx={{
-            textAlign: { sm: "center", md: "center" },
             "& .MuiTypography-root": { fontSize: "14px" },
-            "& .MuiListItemButton-root:hover": {
-              bgcolor: "white",
-              "&, & .MuiListItemIcon-root": {
-                color: "#1e376d",
-              },
-            },
           }}
         >
           <ListItem>
-            <Link sx={{textDecoration : 'none'}} className="decoration-none" to="/">
+            <NavLink exact className="decoration-none " to="/">
               <ListItemButton>
                 <ListItemText primary="All News" />
               </ListItemButton>
-            </Link>
+            </NavLink>
           </ListItem>
           <ListItem>
-            <Link className="decoration-none" to="FeaturedNews">
+            <NavLink className="decoration-none" to="FeaturedNews">
               <ListItemButton>
                 <ListItemText primary="Featured News" />
               </ListItemButton>
-            </Link>
+            </NavLink>
           </ListItem>
           <ListItem>
-            <Link className="decoration-none" to="PressRelease">
+            <NavLink className="decoration-none" to="PressRelease">
               <ListItemButton>
                 <ListItemText primary="Press Release" />
               </ListItemButton>
-            </Link>
+            </NavLink>
           </ListItem>
           <ListItem>
-            <Link className="decoration-none" to="NewsLetter">
+            <NavLink className="decoration-none" to="NewsLetter">
               <ListItemButton>
                 <ListItemText primary="News Letters" />
               </ListItemButton>
-            </Link>
+            </NavLink>
           </ListItem>
         </List>
       </Box>
