@@ -1,0 +1,142 @@
+.colorWhite {
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1e376d;
+}
+
+.bg-lightBlue {
+  background-color: #e9f0ff !important;
+  color: #1e376d !important;
+}
+
+.bg-blue {
+  background-color: #1e376d !important;
+  color: white !important;
+}
+
+.bg-yellow {
+  background-color: #ff8100 !important;
+  color: white;
+}
+
+.bg-light {
+  background-color: #f8f9fc !important;
+}
+
+.bg-white {
+  background-color: white !important;
+  color: black !important;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 14px -2px rgba(194, 194, 194, 1) !important;
+  -moz-box-shadow: 0px 0px 14px -2px rgba(194, 194, 194, 1) !important;
+  box-shadow: 0px 0px 14px -2px rgba(194, 194, 194, 1) !important;
+}
+
+.navbar {
+  border-radius: 5px;
+  box-shadow: none !important;
+  -webkit-box-shadow: 0px 0px 14px -2px rgba(194, 194, 194, 1) !important;
+  -moz-box-shadow: 0px 0px 14px -2px rgba(194, 194, 194, 1) !important;
+  box-shadow: 0px 0px 14px -2px rgba(194, 194, 194, 1) !important;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.divider {
+  border-bottom: 3px solid #f8f9fc;
+}
+
+.search {
+  border-radius: 10px;
+  height: 30px;
+  background-color: rgb(238, 238, 238);
+}
+
+.justify-content-between {
+  display: flex;
+  justify-content: space-between;
+}
+.justify-content-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.heading {
+  font-size: 28px !important;
+  color: rgb(99, 98, 98) !important;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+.sidebar {
+  width: 250px !important;
+  position: sticky;
+  top: 0;
+  height: 100vh !important;
+  z-index: 99;
+}
+
+/* .container {
+  overflow-x: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  padding: 10px;
+  margin: 10px;
+} */
+
+.transition {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.sidebarcall {
+  position: absolute;
+  transform: translate(0);
+}
+.sidebarbg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 90;
+  width: 100vw;
+  background-color: #1e376d83;
+  opacity: 0.5;
+}
+
+.decoration-none {
+  text-decoration: none !important;
+  color: white;
+  width: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .sidebarhide {
+    position: absolute;
+    transform: translate(-100vw);
+  }
+}
